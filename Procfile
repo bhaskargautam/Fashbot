@@ -1,1 +1,1 @@
-web: java -cp target/classes:target/dependency/* ai.wide.heroku.Main
+web: java -cp target/classes:target/dependency/* com.domain.heroku.Main

@@ -1,0 +1,1454 @@
+{
+    "height":{
+        "jewelery":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":null
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":null
+            },
+            "short":{
+                "response":null
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":null
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":null
+            },
+            "high":{
+                "response":null
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+        "hats":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":null
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":null
+            },
+            "short":{
+                "response":null
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":null
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":null
+            },
+            "high":{
+                "response":null
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+        "jeans":{
+            "ankle":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "mid-calf":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "knee height":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short":{
+                "response":{
+                    "attribute":"pants length:short",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "high":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "boots":{
+            "ankle":{
+                "response":{
+                    "attribute":"boot height:ankle",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "mid-calf":{
+                "response":{
+                    "attribute":"boot height:mid-calf",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "knee height":{
+                "response":{
+                    "attribute":"boot height:knee high",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "flat":{
+                "response":{
+                    "attribute":"heel height:flat",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "low":{
+                "response":{
+                    "attribute":"boot height:ankle",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short":{
+                "response":{
+                    "attribute":"boot height:ankle",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":{
+                    "attribute":"boot height:over the knee",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":{
+                    "attribute":"boot height:over the knee",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "high":{
+                "response":{
+                    "attribute":"boot height:over the knee",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "polo":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":{
+                    "attribute":"neckline depth:med neckline",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":{
+                    "attribute":"neckline depth:low neckline",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short":{
+                "response":{
+                    "attribute":"sleeve length:short sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "sleeveless":{
+                "response":{
+                    "attribute":"sleeve length:sleeveless",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long":{
+                "response":{
+                    "attribute":"sleeve length:long sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "3/4 sleeves":{
+                "response":{
+                    "attribute":"sleeve length:3/4 sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "full length":{
+                "response":{
+                    "attribute":"sleeve length:long sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "high":{
+                "response":{
+                    "attribute":"neckline depth:high neckline",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long sleeves":{
+                "response":{
+                    "attribute":"sleeve length:long sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short sleeves":{
+                "response":{
+                    "attribute":"sleeve length:short sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            }
+        },
+
+
+
+        "jumpsuits":{
+            "ankle":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "mid-calf":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "knee height":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":{
+                    "attribute":"neckline depth:low neckline",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short":{
+                "response":{
+                    "attribute":"pants length:short",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "high":{
+                "response":{
+                    "attribute":"neckline depth:high neckline",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long sleeves":{
+                "response":{
+                    "attribute":"sleeve length:long sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short sleeves":{
+                "response":{
+                    "attribute":"sleeve length:short sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            }
+        },
+
+
+        "dress":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":{
+                    "attribute":"dress/skirt length:mid-calf/midi",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "knee height":{
+                "response":{
+                    "attribute":"dress/skirt length:knee length",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":{
+                    "attribute":"neckline depth:low neckline",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short":{
+                "response":{
+                    "attribute":"sleeve length:short sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "sleeveless":{
+                "response":{
+                    "attribute":"sleeve length:sleeveless",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long":{
+                "response":{
+                    "attribute":"sleeve length:long sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "3/4 sleeves":{
+                "response":{
+                    "attribute":"sleeve length:3/4 sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "full length":{
+                "response":{
+                    "attribute":"sleeve length:long sleeves",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "high":{
+                "response":{
+                    "attribute":"neckline depth:high neckline",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+
+        "jacket": {},
+
+
+        "cardigan": {},
+
+
+        "shirt": {},
+
+
+        "skirt": {},
+
+
+        "travel bags":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":null
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":null
+            },
+            "short":{
+                "response":null
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":null
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":null
+            },
+            "high":{
+                "response":null
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "swimwear":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":null
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":null
+            },
+            "short":{
+                "response":null
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":null
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":null
+            },
+            "high":{
+                "response":null
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "suits":{
+            "ankle":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "mid-calf":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "knee height":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short":{
+                "response":{
+                    "attribute":"pants length:short",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "high":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "pants/leggings":{
+            "ankle":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "mid-calf":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "knee height":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short":{
+                "response":{
+                    "attribute":"pants length:short",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "3/4 sleeves":{
+                "response":null
+                }
+            },
+            "full length":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "high":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+        "flat": {},
+
+
+        "shorts":{
+            "ankle":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "mid-calf":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "knee height":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short":{
+                "response":{
+                    "attribute":"pants length:short",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "high":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "coat/cape": {},
+
+
+        "tops": {},
+
+
+        "pump/wedge":{
+            "ankle":{
+                "response":{
+                    "attribute":"boot height:ankle",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "mid-calf":{
+                "response":{
+                    "attribute":"boot height:mid-calf",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "knee height":{
+                "response":{
+                    "attribute":"boot height:knee high",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "flat":{
+                "response":{
+                    "attribute":"heel height:flat",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "low":{
+                "response":{
+                    "attribute":"heel height:low",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short":{
+                "response":{
+                    "attribute":"heel height:low",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":{
+                    "attribute":"heel height:high",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":{
+                    "attribute":"heel height:high",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "high":{
+                "response":{
+                    "attribute":"heel height:high",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "sweatshirt/hoodie": {},
+
+
+        "sandals":{
+            "ankle":{
+                "response":{
+                    "attribute":"boot height:ankle",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "mid-calf":{
+                "response":{
+                    "attribute":"boot height:mid-calf",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "knee height":{
+                "response":{
+                    "attribute":"boot height:knee high",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "flat":{
+                "response":{
+                    "attribute":"heel height:flat",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "low":{
+                "response":{
+                    "attribute":"heel height:low",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short":{
+                "response":{
+                    "attribute":"heel height:low",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":{
+                    "attribute":"heel height:high",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":{
+                    "attribute":"heel height:high",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "high":{
+                "response":{
+                    "attribute":"heel height:high",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "crossbody/messenger bag":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":null
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":null
+            },
+            "short":{
+                "response":null
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":null
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":null
+            },
+            "high":{
+                "response":null
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "blazer": {},
+
+
+        "top handles":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":null
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":null
+            },
+            "short":{
+                "response":null
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":null
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":null
+            },
+            "high":{
+                "response":null
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "belts":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":null
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":null
+            },
+            "short":{
+                "response":null
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":null
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":null
+            },
+            "high":{
+                "response":null
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "clutch/wallet":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":null
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":null
+            },
+            "short":{
+                "response":null
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":null
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":null
+            },
+            "high":{
+                "response":null
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "other accessories":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":null
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":null
+            },
+            "short":{
+                "response":null
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":null
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":null
+            },
+            "high":{
+                "response":null
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "sweater": {},
+
+
+        "backpack":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":null
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":null
+            },
+            "short":{
+                "response":null
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":null
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":null
+            },
+            "high":{
+                "response":null
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        },
+
+
+        "joggers":{
+            "ankle":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "mid-calf":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "knee height":{
+                "response":{
+                    "attribute":"pants length:capri/crop",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "short":{
+                "response":{
+                    "attribute":"pants length:short",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "3/4 sleeves":{
+                "response":null
+                }
+            },
+            "full length":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "high":{
+                "response":{
+                    "attribute":"pants length:long",
+                    "options":{
+                        "min":0.75
+                    }
+                }
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            },
+        "glasses/sunglasses":{
+            "ankle":{
+                "response":null
+            },
+            "mid-calf":{
+                "response":null
+            },
+            "knee height":{
+                "response":null
+            },
+            "flat":{
+                "response":null
+            },
+            "low":{
+                "response":null
+            },
+            "short":{
+                "response":null
+            },
+            "sleeveless":{
+                "response":null
+            },
+            "long":{
+                "response":null
+            },
+            "3/4 sleeves":{
+                "response":null
+            },
+            "full length":{
+                "response":null
+            },
+            "high":{
+                "response":null
+            },
+            "long sleeves":{
+                "response":null
+            },
+            "short sleeves":{
+                "response":null
+            }
+        }
+    }}
+

@@ -1,4 +1,4 @@
-package ai.wide.heroku;
+package com.domain.heroku;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;

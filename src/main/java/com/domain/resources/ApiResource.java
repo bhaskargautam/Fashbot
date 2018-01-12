@@ -27,28 +27,36 @@ public class ApiResource {
     	System.out.println("Hola esto es un get");
         return Response.status(200).entity("{}").build();
     }
-    
+
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     public Response postIt(String req) {
     		LOGGER.info("Received Request: " + req);
-    		JSONObject request = new JSONObject(req);
-    		String sessionId = (String) request.get("sessionId");
-    		Session.addSession(sessionId);
-    		
     		JSONObject response = new JSONObject();
-    		if(req.contains(OrderTrackingIntent)) {
-    			response.accumulate("speech", 
-    					String.format(OrderTrackingDefault, Session.getArrivalDate(sessionId)));
+    		try {
+        		JSONObject request = new JSONObject(req);
+        		String sessionId = (String) request.get("sessionId");
+        		LOGGER.info("Session ID: " + sessionId);
+        		Session.addSession(sessionId);
+
         		
-    		} else if (req.contains(PriceCheckIntent)) {
-    			response.accumulate("speech", 
-    					String.format(PriceCheckDefault, Session.getOrderPrice(sessionId)));
+        		if(req.contains(OrderTrackingIntent)) {
+        			response.accumulate("speech", 
+        					String.format(OrderTrackingDefault, Session.getArrivalDate(sessionId)));
+            		
+        		} else if (req.contains(PriceCheckIntent)) {
+        			response.accumulate("speech", 
+        					String.format(PriceCheckDefault, Session.getOrderPrice(sessionId)));
+        		}
+        		else if(req.contains("kab")) {
+        			response.accumulate("speech", "Aa jayega order don't worry");
+        		}
     		}
-    		else if(req.contains("kab")) {
-    			response.accumulate("speech", "Aa jayega order don't worry");
+    		catch (Exception e) {
+    		    LOGGER.warning("Failed to get response" + e.getMessage());
     		}
-    		 		
+    		
+    		LOGGER.info("Response: " + response.toString());
         return Response.status(200).entity(response.toString()).build();
     }
 }               

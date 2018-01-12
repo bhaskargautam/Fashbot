@@ -9,6 +9,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.json.JSONObject;
+
 @Path("apiserver")
 public class ApiResource {
 	
@@ -25,6 +27,8 @@ public class ApiResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response postIt(String req) {
     		LOGGER.info(req);
-        return Response.status(200).entity("WhatsUPP").build();
+    		JSONObject obj = new JSONObject();
+    		obj.accumulate("fulfillmentText", "Aa jayega order don't worry");
+        return Response.status(200).entity(obj.toString()).build();
     }
 }               

@@ -26,13 +26,12 @@ public class ApiResource {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     public Response postIt(String req) {
-    		LOGGER.info(req);
-    		req = req.replaceAll("expected", "Xpected");
-    		//JSONObject obj = new JSONObject(req);
-    		//JSONObject fullfillment = obj.getJSONObject("fulfillmentText");
-    		//fullfillment.ge
-    		//accumulate("fulfillmentText", "Aa jayega order don't worry");
-    	
-        return Response.status(200).entity(req).build();
+    		LOGGER.info("Received Request: " + req);
+    		
+    		JSONObject obj = new JSONObject();
+    		obj.accumulate("fulfillmentText", "Aa jayega order don't worry");
+    		obj.accumulate("speech", "Aa jayega order don't worry");
+    		
+        return Response.status(200).entity(obj.toString()).build();
     }
 }               

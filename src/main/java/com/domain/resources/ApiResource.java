@@ -25,6 +25,6 @@ public class ApiResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response postIt(String req) {
     		LOGGER.info(req);
-        return Response.status(200).entity(req).build();
+        return Response.status(200).entity("WhatsUPP").build();
     }
 }               

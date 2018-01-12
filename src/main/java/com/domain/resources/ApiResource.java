@@ -16,6 +16,11 @@ public class ApiResource {
 	
 	private static final Logger LOGGER = Logger.getLogger(ApiResource.class.getName() );
 	
+	public static final String OrderTrackingIntent = "Order tracking";
+	public static final String OrderTrackingDefault = "Your order is in transit, will arrive by %s";
+	public static final String PriceCheckIntent = "Price Check";
+	public static final String PriceCheckDefault = "It is just %s euros, including your 10%% discount";
+	
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getIt() {
@@ -27,11 +32,23 @@ public class ApiResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response postIt(String req) {
     		LOGGER.info("Received Request: " + req);
+    		JSONObject request = new JSONObject(req);
+    		String sessionId = (String) request.get("sessionId");
+    		Session.addSession(sessionId);
     		
-    		JSONObject obj = new JSONObject();
-    		obj.accumulate("fulfillmentText", "Aa jayega order don't worry");
-    		obj.accumulate("speech", "Aa jayega order don't worry");
-    		
-        return Response.status(200).entity(obj.toString()).build();
+    		JSONObject response = new JSONObject();
+    		if(req.contains(OrderTrackingIntent)) {
+    			response.accumulate("speech", 
+    					String.format(OrderTrackingDefault, Session.getArrivalDate(sessionId)));
+        		
+    		} else if (req.contains(PriceCheckIntent)) {
+    			response.accumulate("speech", 
+    					String.format(PriceCheckDefault, Session.getOrderPrice(sessionId)));
+    		}
+    		else if(req.contains("kab")) {
+    			response.accumulate("speech", "Aa jayega order don't worry");
+    		}
+    		 		
+        return Response.status(200).entity(response.toString()).build();
     }
 }               

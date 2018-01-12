@@ -11,10 +11,10 @@ import org.eclipse.jetty.webapp.WebAppContext;
 public class Main {
 
      /**
-	 * Main Method. Starts the Application.
-	 * @param args
-	 * @throws Exception
-	 */
+      * Main Method. Starts the Application.
+      * @param args
+      * @throws Exception
+      */
     public static void main(final String[] args) throws Exception {
         // The port that we should run on can be set into an environment variable
         // Look for that variable and default to 8080 if it isn't there.

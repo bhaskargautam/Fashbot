@@ -84,10 +84,10 @@ public class MyResourceTest extends JerseyTest {
         request.accumulate("query", "kab");
         request.accumulate("sessionId", "123");
 
-            final String responseMsg = target().path("apiserver").request(
-                    MediaType.APPLICATION_JSON).post(
-                Entity.json(request.toString()),
-                String.class);
-            assertTrue(responseMsg.contains("speech"));
+        final String responseMsg = target().path("apiserver").request(
+                MediaType.APPLICATION_JSON).post(
+            Entity.json(request.toString()),
+            String.class);
+        assertTrue(responseMsg.contains("speech"));
     }
 }

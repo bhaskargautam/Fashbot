@@ -39,24 +39,23 @@ public class ApiResource {
         		LOGGER.info("Session ID: " + sessionId);
         		Session.addSession(sessionId);
 
-        		
-        		if(req.contains(OrderTrackingIntent)) {
-        			response.accumulate("speech", 
-        					String.format(OrderTrackingDefault, Session.getArrivalDate(sessionId)));
-            		
+        		if (req.contains(OrderTrackingIntent)) {
+        			response.accumulate("speech",
+    					String.format(OrderTrackingDefault,
+			        Session.getArrivalDate(sessionId)));
         		} else if (req.contains(PriceCheckIntent)) {
-        			response.accumulate("speech", 
-        					String.format(PriceCheckDefault, Session.getOrderPrice(sessionId)));
+        			response.accumulate("speech",
+    					String.format(PriceCheckDefault,
+			        Session.getOrderPrice(sessionId)));
+        		} else if (req.contains("kab")) {
+        			response.accumulate("speech",
+    			        "Aa jayega order don't worry");
         		}
-        		else if(req.contains("kab")) {
-        			response.accumulate("speech", "Aa jayega order don't worry");
-        		}
-    		}
-    		catch (Exception e) {
+    		} catch (Exception e) {
     		    LOGGER.warning("Failed to get response" + e.getMessage());
     		}
-    		
+
     		LOGGER.info("Response: " + response.toString());
         return Response.status(200).entity(response.toString()).build();
     }
-}               
+}

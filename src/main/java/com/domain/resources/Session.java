@@ -1,5 +1,6 @@
 package com.domain.resources;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Random;
@@ -34,12 +35,18 @@ public class Session {
       * @param sessionId Unique ID for session
       */
      public static void addSession(final String sessionId) {
+        if (sessionsArriveDay.containsKey(sessionId)) {
+            return;
+        }
+
         Integer extraTime = twoDaysInMs * (new Random()).nextInt(deliveryRange);
         Date arriveDate = new Date(System.currentTimeMillis() + extraTime);
-        sessionsArriveDay.put(sessionId, arriveDate.toString());
+        SimpleDateFormat format = new SimpleDateFormat("EEE MMM dd, hh:mm");
+        System.out.println(format.format(arriveDate));
+        sessionsArriveDay.put(sessionId, format.format(arriveDate));
         Float price = (new Random()).nextFloat() *  deliveryRange
                 + deliveryRange;
-        sessionsOrderPrice.put(sessionId, String.format(".2f", price));
+        sessionsOrderPrice.put(sessionId, String.format("%.2f", price));
      }
 
      /**

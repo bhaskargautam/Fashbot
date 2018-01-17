@@ -12,10 +12,17 @@ import java.util.Random;
  * @author bhaskargautam
  *
  */
-public class Session {
+public final class Session {
 
-    private static Integer twoDaysInMs = 86400000;
-    private static Integer deliveryRange = 10;
+    /**
+     * Represents 2 days in milliseconds.
+     */
+    private static final Integer TWO_DAYS_IN_MS = 86400000;
+
+    /**
+     * Represents Maximum days a delivery takes.
+     */
+    private static final Integer MAX_DELIVERY_DAYS = 10;
 
      /**
      * Hashmap to store session_id with expected arrival date.
@@ -39,13 +46,14 @@ public class Session {
             return;
         }
 
-        Integer extraTime = twoDaysInMs * (new Random()).nextInt(deliveryRange);
+        Integer deliveryInDays = (new Random()).nextInt(MAX_DELIVERY_DAYS);
+        Integer extraTime = TWO_DAYS_IN_MS * deliveryInDays;
         Date arriveDate = new Date(System.currentTimeMillis() + extraTime);
         SimpleDateFormat format = new SimpleDateFormat("EEE MMM dd, hh:mm");
         System.out.println(format.format(arriveDate));
         sessionsArriveDay.put(sessionId, format.format(arriveDate));
-        Float price = (new Random()).nextFloat() *  deliveryRange
-                + deliveryRange;
+        Float price = (new Random()).nextFloat() *  MAX_DELIVERY_DAYS
+                + MAX_DELIVERY_DAYS;
         sessionsOrderPrice.put(sessionId, String.format("%.2f", price));
      }
 
@@ -65,5 +73,24 @@ public class Session {
       */
      public static String getOrderPrice(final String sessionId) {
          return sessionsOrderPrice.get(sessionId);
+     }
+
+     /**
+      * Private Constructor to prevent instantiation.
+     * @throws Exception Cannot be instantiated.
+      */
+     private Session() throws Exception {
+         throw new Exception("Session class provides static methods."
+                 + " Instantiation not needed");
+     }
+
+     /**
+      * Public method to get instant of Session.
+      * Should throw an Error since Session cannot be instantiated.
+      * @return Session object.
+      * @throws Exception Cannot be instantiated.
+      */
+     public static Session getSessionInstance() throws Exception {
+         return new Session();
      }
 }

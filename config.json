@@ -803,8 +803,7 @@
                     "options":{
                         "min":0.75
                     }
-                }
-            },
+                },
             "mid-calf":{
                 "response":{
                     "attribute":"pants length:capri/crop",

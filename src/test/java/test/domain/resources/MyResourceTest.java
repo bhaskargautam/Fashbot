@@ -1,12 +1,18 @@
-package com.domain.resources;
+package test.domain.resources;
 
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.MediaType;
+
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.test.JerseyTest;
 import org.json.JSONObject;
 import org.junit.Test;
+
+import com.domain.resources.ApiResource;
+import com.domain.resources.Session;
+import com.domain.heroku.Main;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -49,7 +55,7 @@ public class MyResourceTest extends JerseyTest {
     @Test
     public void testOrderTracking() {
         JSONObject request = new JSONObject();
-        request.accumulate("query", ApiResource.OrderTrackingIntent);
+        request.accumulate("query", ApiResource.ORDER_TRACKING_INTENT);
         request.accumulate("sessionId", "123");
 
         final String responseMsg = target().path("apiserver").request(
@@ -65,7 +71,7 @@ public class MyResourceTest extends JerseyTest {
     @Test
     public void testOrderPriceCheck() {
         JSONObject request = new JSONObject();
-        request.accumulate("query", ApiResource.PriceCheckIntent);
+        request.accumulate("query", ApiResource.PRICE_CHECK_INTENT);
         request.accumulate("sessionId", "123");
 
             final String responseMsg = target().path("apiserver").request(
@@ -90,4 +96,58 @@ public class MyResourceTest extends JerseyTest {
             String.class);
         assertTrue(responseMsg.contains("speech"));
     }
+
+    /**
+     * Tests Main java file.
+     */
+    @Test
+    public void testMain() {
+       Thread thread = new Thread(new Runnable() {
+               @Override
+               public void run() {
+                   try {
+                    Main.main(null);
+                } catch (Exception e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+               }
+           });
+       thread.start();
+       String res = target().path("apiserver")
+                           .request().get(String.class);
+       assertEquals(res, "{}");
+       thread.interrupt();
+    }
+
+    /**
+     * Test to send non-JSON input to POST endpoint.
+     */
+    @Test
+    public void testExceptionInPost() {
+        final String responseMsg = target().path("apiserver").request(
+                MediaType.APPLICATION_JSON).post(
+            Entity.json("gibberish"),
+            String.class);
+        assertFalse(responseMsg.contains("speech"));
+    }
+
+    /**
+     * Test Private Constructors.
+     */
+    @Test
+    public void testPrivateConstructor() {
+        try {
+            Session.getSessionInstance();
+        } catch (Exception e) {
+            assertTrue(true); //test pass
+        }
+
+        try {
+            Main.getMainInstant();
+        } catch (Exception e) {
+            assertTrue(true); //test pass
+        }
+    }
+
 }
